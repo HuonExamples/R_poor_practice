@@ -1,12 +1,8 @@
-# While this script correctly calculates the sum of numbers, it uses a loop for a simple summation operation instead of utilizing the more efficient sum() function.
+# Recommended improvements:
+# 1. Replace the loop with the sum() function for a more efficient calculation of the sum.
+# 2. Remove the unnecessary code to create a vector of numbers, as it is not used in the calculation.
 
-# Creating a vector of numbers from 1 to 100
-numbers <- c(1:100)
-
-# Calculating the sum using a loop
-sum_result <- 0
-for (i in 1:length(numbers)) {
-  sum_result <- sum_result + numbers[i]
-}
+# Calculating the sum using sum() function
+sum_result <- sum(numbers)
 
 cat("The sum of numbers is:", sum_result, "\n")
